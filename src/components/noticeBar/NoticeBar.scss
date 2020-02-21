@@ -1,0 +1,48 @@
+.NoticeBar {
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    .icon-md-guangbo{
+        color: #666;
+        font-size: 15px;
+    }
+    .wrapper {
+        font-size: 15px;
+        color: #5a4242;
+        display: inline-block;
+        width: 1200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+        padding-left: 34px;
+        position: relative;
+        line-height: 48px;
+        img{
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+
+    .inner {
+        overflow: hidden;
+    }
+
+    .inner p {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    @keyframes marquee {
+        0%{ 
+            -moz-transform: translateX(0%);
+            -webkit-transform: translateX(0%); 
+            transform: translateX(0%);
+        }
+        100%{
+            -moz-transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); 
+        }
+    }
+
+}

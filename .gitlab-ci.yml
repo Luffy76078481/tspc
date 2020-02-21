@@ -1,0 +1,102 @@
+stages:
+  - build
+  # - cleanup_build
+  - deploy
+  - production
+  - superWap
+  - superPc
+  # - cleanup
+cache:
+  key: ${CI_COMMIT_REF_NAME}
+  paths:
+  - node_modules/
+  - dist2/
+  - distWap/
+deploy:
+  stage: deploy
+  script:
+    - npm install
+    - echo "build完成！"
+    - echo "发布中！（手动执行）"
+   
+    - if [[ "$CI_COMMIT_MESSAGE" =~ "@T-usd-pc" ]]; then
+      echo 'usd-pc';
+      runOrder="build";
+      localFileName="build/*"
+      devFileName="usd-pc";
+      sendPath="usd-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-cgtest02-pc" ]]; then
+      echo 'cgtest02-pc';
+      runOrder="build";
+      localFileName="build/*"
+      devFileName="cgtest02-pc";
+      sendPath="cgtest02-pc";
+
+      else
+      echo "配置错误";
+      return;
+      fi;
+
+    - rm -rf $localFileName
+    - npm run $runOrder
+    # 拷贝打包好的文件到同步目录  $devFileName对应皮的名字
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - echo "同步目录创建完成！"
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.170::helloRsync 
+
+    - echo "发布成功。自己检查一下，然后域名发群里，通知客服测试！";
+  allow_failure: false
+  only:
+    variables:
+    - $CI_COMMIT_MESSAGE =~ /@T/
+    # variables:
+    # - $CI_COMMIT_MESSAGE != "commPush"
+  # # when: manual
+
+production:
+  stage: production
+  script:
+    - npm install
+    - echo "build完成！"
+    - echo "发布中！（手动执行）"
+
+    - if [[ "$CI_COMMIT_MESSAGE" =~ "@P-usd-pc" ]]; then
+      echo 'usd-pc';
+      runOrder="build";
+      localFileName="build/*"
+      devFileName="usd-pc";
+      sendPath="usd-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-bee-pc" ]]; then
+      echo 'bee-pc';
+      runOrder="build";
+      localFileName="build/*"
+      devFileName="bet365-bee-pc";
+      sendPath="bet365-bee-pc";
+
+      else
+      echo "配置错误";
+      return;
+      fi;
+
+    - rm -rf $localFileName
+    - npm run $runOrder
+    # 拷贝打包好的文件到同步目录  $devFileName对应皮的名字
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - echo "同步目录创建完成！"
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync 
+    
+    - echo "发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  allow_failure: false
+  only:
+    variables:
+    - $CI_COMMIT_MESSAGE =~ /@P/
+    # variables:
+    # - $CI_COMMIT_MESSAGE != "commPush"
+  when: manual

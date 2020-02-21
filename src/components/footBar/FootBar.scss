@@ -1,0 +1,126 @@
+.FootBar{
+   height: 320px;
+   position: relative;
+   background: rgb(53, 63, 75);
+   padding: 0px 0px 13px;
+   .footImg{
+       width: $mainWidth;
+       margin: auto;
+       height: 88px;
+       background: url(./images/footBar.png) 0 0/100% 100% no-repeat;
+      //  box-shadow: 0px 15px 10px -15px #2e3642;
+       border-bottom: 1px solid #2e3642;
+   }
+   .footIcon{
+      width: 1250px;
+      padding: 0 191px 0 115px;
+      margin: 0 auto 30px;
+      box-sizing: border-box;
+      .procedureGroup{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        .procedureItem{
+            text-align: center;
+            cursor: pointer;
+            .title{
+                line-height: 18px;
+                font-size: 14px;
+                color: #7c8797;
+            }
+        }
+        .term1{
+            .procedureIcon1{
+                width: 89px;
+                height: 25px;
+                margin: 0 auto 10px;
+                background: url(./images/logo_CG_normal.png) no-repeat center center;
+                background-size: contain;
+            }
+            &:hover{
+                .title1{color: #fff;}
+                .procedureIcon1{
+                    background: url(./images/logo_CG.png) no-repeat center center;
+                }
+            }      
+        }
+        
+        .term2{
+            .procedureIcon2{
+                width: 154px;
+                height: 30px;
+                margin: 0 auto 8px;
+                background: url(./images/logo_mga_normal.png) no-repeat center center;
+                background-size: contain;
+            }
+            &:hover{
+                .title2{color: #fff;}
+                .procedureIcon2{
+                    background: url(./images/logo_mga.png) no-repeat center center;
+                }
+            }
+        }
+        .term3{
+            .procedureIcon3{
+                width: 169px;
+                height: 40px;
+                margin:0 auto 2px;
+                background: url(./images/logo_bvi_normal.png) no-repeat center center;
+                background-size: contain;
+
+            }
+            &:hover{
+                .title3{color: #fff;}
+                .procedureIcon3{
+                    background: url(./images/logo_bvi.png) no-repeat center center;
+                }
+            }
+        }
+        .term4{
+          .procedureIcon4{
+              width: 41px;
+              height: 41px;
+              margin: 0 auto 3px;
+              background: url(./images/logo_pagcor_normal.png) no-repeat center center;
+              background-size: contain
+
+          }
+          &:hover{
+              .title4{color: #fff;}
+              .procedureIcon4{
+                  background: url(./images/logo_pagcor.png) no-repeat center center;
+              }
+          }
+        }
+      }
+    }
+  .copyright{
+    line-height: 17px;
+    text-align: center;
+    font-size: 14px;
+    color: #7c8797;
+  }
+  p{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: rgb(124, 135, 151);
+  }
+  .FooterLinks{
+    width: 542px;
+    font-size: 13px;
+    margin: 20px auto;
+    a{
+      margin: 0 12px 0 0;
+      padding: 0 6px;
+      color: rgb(124, 135, 151);
+      cursor: pointer;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
+

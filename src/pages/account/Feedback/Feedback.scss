@@ -1,0 +1,99 @@
+.Feedback{
+  h2{
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+  }
+  >.feedwrap{
+    height: auto;
+    margin-top: 24px;
+    position: relative;
+    margin-top: 30px;
+    .matterType{
+      text-align: right;
+      width: 89px;
+      font-size: 16px;
+      color: #333;
+      height: 22px;
+      line-height: 22px;
+      margin: 9px 9px 9px 0;
+      em{
+        color: #e52f2f;
+        font-size: 16px;
+        font-style: normal;
+      }
+    }
+    .tab{
+      margin-bottom: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      .types{
+        width: 749px;
+        position: relative;
+        ul{
+          width: 105%;
+          li{
+            float: left;
+            width: 172px;
+            cursor: pointer;
+            height: 40px;
+            border-radius: 2px;
+            background-color: #fff;
+            margin: 0 20px 23px 0;
+            border: 1px solid #e3e3e3;
+            text-align: center;
+            line-height: 38px;
+            &.active{
+              background-image: url(../deposit/images/icon.png);
+              background-repeat: no-repeat;
+              background-position: right -1px bottom -1px;
+              background-size: 15px auto;
+              border: 1px solid #00aeff;
+              color: #00aeff;
+            }
+          }
+        }
+      }    
+    }
+    .advice{
+      display: flex;
+      .tex{
+        width: 749px;    
+        position: relative;
+        textarea{
+          width: 100%;
+          margin: 3px 0 32px;
+          height: 140px;
+          outline: none;
+          padding: 13px 0 0 12px;
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          color: #333;
+          resize: none;
+          line-height: 18px;
+          border: 1px solid rgba(0,0,0,.15);
+          border-radius: 2px;
+          text-indent: 0;
+          letter-spacing: 2px;
+          line-height: 20px;
+          font-size: 14px;
+        }
+        >span{
+          position: absolute;
+          bottom: 40px;
+          right: 12px;
+          color: rgba(0,0,0,.25);
+          font-size: 14px;
+        }       
+      }
+    } 
+    .sub{
+      display: flex;
+      .SubBut{
+        margin: 0 0 0 98px;
+      }       
+    }
+  }
+}

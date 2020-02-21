@@ -1,0 +1,105 @@
+.Pui{
+    .StatusUi.noData{
+        margin-top: 1.1rem;
+        width: 100%;
+        text-align: center;
+        background: url(./images/no.png) no-repeat 50%;
+        height: 5rem;
+        display: inline-block;
+        background-size: contain;
+    }
+    .StatusUi.homeNoData{
+        width: 100%;
+        text-align: center;
+        background: url(./images/no.png) no-repeat 50%;
+        height: 5rem;
+        display: inline-block;
+        background-size: contain;
+    }
+    .StatusUi.noMore{
+        text-align: center;
+        line-height: 1.2rem;
+        color: #888;
+        width: 100%;
+        font-size:.3rem ;
+    }
+    .StatusUi.loading{
+        text-align: center;
+        line-height: 1.2rem;
+        color: #888;
+        width: 100%;
+        font-size:.3rem ;
+        .icon-ggkicon-spinner {
+            font-size:.35rem ;
+            margin-right:.2rem;
+            display: inline-block;
+            -moz-animation: spin 2s infinite linear;
+            -o-animation: spin 2s infinite linear;
+            -webkit-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear;
+        }
+    }
+    .set_withdraw_pwd {
+        .am-list-item {
+            line-height: 1.2rem;
+            padding-left: 0 !important;
+            
+            .am-list-line {
+                justify-content: flex-start;
+                padding-right: 0;
+
+                .am-input-label {
+                    width: 2rem;
+                    font-size: .28rem;
+                    color: #333;
+                    padding-left: .2rem;
+                }
+                .am-input-control {
+                    padding-right: .2rem;
+                    box-sizing: border-box;
+                    width: 4rem;
+                    flex: none;
+
+                    input {
+                        letter-spacing: .4rem;
+                        padding: .1rem 0 .1rem .2rem;
+                        border: 1px solid #ccc;
+                        border-radius: 8px;
+                    }
+                }
+                .am-input-extra {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+    }
+}
+
+// 支付密码
+.Pui-PassWord{
+    display: inline-block;
+    height: 40px;
+    background-color: rgba(255,255,255,0.6);
+    color: #333;
+    font-size: 14px;
+    width: calc(100% - 40px);
+    &>select.PayPassWord{
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin: 0 10px 0 0;
+        outline: none;
+        border: none;
+        background: none;
+    }
+}

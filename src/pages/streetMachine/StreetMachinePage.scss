@@ -1,0 +1,45 @@
+.StreetMachinePage {
+  position: relative;
+  overflow: hidden;
+  .GameTabs{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 78px;
+    z-index: 10;
+    .tabsBox{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .chessBG{
+    width: 1920px;
+    height: 782px;
+    margin: 0 auto;
+    button{
+      text-align: center;
+      height: 53px;
+      line-height: 53px;
+      margin-bottom: 10px;
+      background: linear-gradient(270deg, #276ff6, #83c5fc);
+      color: #fff;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      width: 203px;
+      right: 588px;
+      top: 550px;
+      font-size: 17px;
+      position: absolute;
+      top: 568px;
+      left: 862px;
+      &:hover{
+        background: linear-gradient(90deg, #276ff6, #83c5fc);
+      }
+    }
+  }
+  
+}
+
+
+

@@ -1,0 +1,376 @@
+.NavBar{
+    position: relative;
+    z-index: 100;
+    min-width: 1856px;
+       .navRight{
+            height: 100%;
+            line-height: 34px;
+            color: #666;
+            font-size: 13px;
+            position: absolute;
+            left: 1441px;
+            top: 0;
+            padding-top: 21px;
+           .goHome{
+               color: #666;
+               margin-left: 40px;
+           }
+           .tophover:hover{
+               color: white;
+               cursor: pointer;
+           }
+           .login-form{
+               float: right;
+               position: relative;
+               height: 100%;
+               .userName,.password{
+                color: #666;
+                line-height: 18px;
+                padding: 8px 5px 8px 10px;
+                width: 124px;
+                border-radius: 4px;
+                margin-right: 10px;
+                float: left;
+                margin-top: 3px;
+                border: 1px solid #666;
+               }
+               .forget{
+                   position: absolute;
+                   left: 220px;
+                   top: 3px;
+                   cursor: pointer;
+               }
+               
+               button{
+                    transition: all .4s ease;
+                    background-color: #01a69c;
+                    margin-right: 10px;
+                    color: #ededfc;
+                    width: 66px;
+                    height: 36px;
+                    border: none;
+                    float: left;
+                    padding: 5px 15px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    margin-top: 3px;
+               }
+               .form-reg{
+                    transition: all .4s ease;
+                    background-color: #1c97ce;
+                    color: #ededfc;
+                    line-height: 35px;
+                    border: none;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    display: inline-block;
+                    margin-top: 3px;
+                    height: 35px;
+                    width: 61px;
+               }
+               button:hover,.form-reg:hover{
+                background-color: #ee8f13;
+               }
+           }
+           .userInfo{
+                height: 100%;
+            .news{
+                position: relative;
+                .newsCont{
+                    position: absolute;
+                    right: -38px;
+                    top: -14px;
+                    border-radius: 100%;
+                    color: white;
+                    background: #666;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-size: 7px;
+                }
+            }
+            a{
+                color: #666;
+                margin-right: 18px;
+                .headMoney{
+                    color: #fcad34;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    vertical-align: top;
+                    max-width: 60px;
+                    display: inline-block;
+                }
+                .iconxiaoxi{
+                    font-size: 27px;
+                    margin-top: 4px;
+                    display: block;
+                }
+            }
+            a:nth-of-type(1),a:nth-of-type(5){
+                margin: 0;
+            }
+            a:hover,.loginOut:hover{
+                color: #1c97ce;
+            }
+            .iconAni{
+                animation: .5s identifier linear infinite;
+                color: red;
+            }
+            @keyframes identifier {
+                0%{
+                    transform: rotate(10deg);
+                }
+                66%{
+                    transform: rotate(-10deg);
+                }
+                99%{
+                    transform: rotate(0deg);
+                }
+            }
+
+            .loginOut{
+                cursor: pointer;
+            }
+
+
+            .xian{
+                width: 1px;
+                height: 56px;
+                background-image: linear-gradient(180deg,rgba(231,237,243,0),#d8d8d8 49%,rgba(231,237,243,0));
+                margin-right: 10px;
+                position: absolute;
+                top: 15px;
+                left: 39px;
+            }
+            .rightTop{
+                font-size: 16px;
+                position: absolute;
+                top: 10px;
+                left: 57px;
+                width: 260px;
+
+                .vip_logo {
+                    width: 20px;
+                    position: relative;
+                    top: -2px;
+                }
+
+                .rightTopName{
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-right: 15px;
+                    width: 65px;
+                    overflow: hidden;
+                    display: inline-block;
+                    height: 24px;
+                    text-overflow: ellipsis;
+                }
+            }
+            .rightBottom{
+                font-size: 16px;
+                position: absolute;
+                top: 35px;
+                left: 55px;
+                width: 200px;
+                .loginOut{
+                    border-left: 1px solid rgb(90, 88, 88);
+                    padding-left: 10px;
+                    height: 20px;
+                    line-height: 20px;
+                    float: right;
+                    font-size: 13px;
+                    position: absolute;
+                    right: -35px;
+                    top: 10px;
+                }
+                .money{
+                    position: absolute;
+                    top: 3px;
+                    font-size: 13px;
+                    right: 30px;
+                    width: 110px;
+                }
+                
+                img{
+                    position: absolute;
+                    top: -20px;
+                    right: -106px;
+                    border-radius: 100%;
+                    width: 50px;
+                }
+             
+            }
+           }
+       }
+   .navCen{
+       height: 86px;
+       background: $BG2;
+        .navCenCon{
+            width: 1350px;
+            height: 100%;
+            display: flex;
+            margin-left: 80px;
+        }
+        a{
+            float: left;
+            height: 100%;
+            line-height: 86px;
+            font-size: 16px;
+            margin-right: 23px;
+            color: $fontColor1;
+            position: relative;
+            flex-grow: 1;
+            cursor: pointer;
+            span{
+                margin-right: 6px;;
+                transition: all .4s ease;
+            }
+            .iconjiantou{
+                transition: all .4s ease;
+                display: inline-block;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .bord{
+                transition: all .4s ease;
+                width: 27px;
+                transform: scaleX(0);
+                background: $USDNAVCOLOR;
+                height: 2px;
+                position: absolute;
+                left: 19px;
+                margin: auto;
+                top: 60px;
+            }
+            .navLogo{
+                display: block;
+                width: 141px;
+                height: 60px;
+                margin-top: 11px; 
+            }
+        }
+        a:last-child{
+            margin-right: 0;
+        }
+        a:hover{
+            color: $USDNAVCOLOR;
+            .iconjiantou{
+                transform: rotate(180deg);
+            }
+            // .bord{
+            //     transform: scaleX(1);
+            // }
+        }
+        a.active{
+            color: $USDNAVCOLOR;
+            // font-weight: bold;
+            font-size: 19px;
+            // .bord{
+            //     transform: scaleX(1);
+            //     width: 42px;
+            //     height: 4px;
+            //     left: 19px;
+            //     top: 82px;
+            // }
+        }
+
+   }
+
+   .navBarBox{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        bottom: -300px;
+        z-index: -1;
+        // background: $BG3;
+        background: rgba(255, 255, 255, 1);
+        transition: all .4s ease;
+
+        .hint {
+            width: 130px;
+            overflow: hidden;
+
+            & :hover {
+                background: rgba(255, 255, 255, 0.784);
+            }
+
+            img {
+                transition: all .4s ;
+                	width: 100%;          
+            }
+
+            img:hover {
+                // transform: scale(1.05, 1.05);
+                background: rgba(255, 255, 255, 0.784);
+            }
+        }
+
+        .secNavBarBox{
+            margin: auto;
+            width: $mainWidth;
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content:center;
+            .secNavBar{
+                flex-grow: 1;
+                overflow: hidden;
+                img{
+                    transition: all .4s ease;
+                    width: 100%;
+                    height: 100%;
+                };
+                img:hover{
+                    transform: scale(1.05,1.05);
+                    background: rgba(255, 255, 255, 0.784);
+                }
+            }
+            .secNavBar-swper{
+                overflow: hidden;
+                width: 200px;
+                img{
+                    transition: all .4s ease;
+                    width: 100%;
+                    height: 100%;
+                };
+                img:hover{
+                    transform: scale(1.05,1.05);
+                    background: rgba(255, 255, 255, 0.784);
+                }
+            }
+        }
+   }
+   .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;   
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+
+

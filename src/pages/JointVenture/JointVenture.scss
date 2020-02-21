@@ -1,0 +1,161 @@
+
+
+
+
+.JointVenture{
+  font-family: Tahoma, "Microsoft YaHei", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  padding:50px 0 0;
+  color: #646464;
+  text-align: center;
+  .page1_left{
+    display: inline-block;
+    width: 654px;
+    vertical-align: middle;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1s 0s ease-out;
+    .y_a_m_f {
+      position: relative;
+      z-index: 18999;
+      height: 285px;
+      margin: 0 auto;
+      background: url(./images/wz_agent.png) no-repeat;
+      background-size: cover;
+    }
+    .ju_txt{
+      height: 53px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 18999;
+      text-align: center;
+      font-size: 34px;
+      color: #666666;
+      font-weight: 100; 
+    }
+    .ju_txt2 {
+      position: relative;
+      margin: 0 auto;
+      margin: 24px 0 24px 0;
+      display: flex;
+      justify-content: center;
+      >div{
+        display: flex;
+        align-items: center;
+        margin-right: 60px;
+        img{
+          vertical-align: top;
+        }
+        .textIntro {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          p:first-child {
+            color: #666666;
+            font-size: 14px;
+          }
+          p {
+            text-align: left;
+            color: #999999;
+            margin-bottom: 0;
+            font-size: 12px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .contactBox{
+      width: 720px;
+      height: 178px;
+      margin-left: -24px;
+      ul{
+        li{
+          width: 220px;
+          height: 178px;
+          border-radius: 10px;
+          box-shadow: 0 0 21px 5px rgba(207, 207, 207, 0.5);
+          background-color: #f8f9fb;
+          float: left;
+          margin-right: 20px;
+          .contactIcon{
+            width: 34px;
+            height: 34px;
+            display: inline-block;
+            margin-top: 20px;
+            background-size: contain;
+            margin-bottom: 9px;
+            background-position: center;
+            &.contactIcon1 {
+              background: url(./images/logo_qq.png) no-repeat;
+            }
+            &.contactIcon2 {
+              background: url(./images/logo_qq_2.png) no-repeat;
+            }
+            &.contactIcon3{
+              background: url(./images/logo_qq_3.png) no-repeat;
+            }
+          }
+          .contactText1 {
+            height: 18px;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            color: #666666;
+            margin-bottom: 8px;
+          }
+          .contactText2 {
+            line-height: 20px;
+            height: 20px;
+            font-size: 16px;
+            text-align: center;
+            color: #3085e5;
+            margin-bottom: 17px;
+          }
+          .contactButton {
+            width: 100px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 31px;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-block;
+            user-select: none;
+            background-image: linear-gradient(to left, #276ff6, #83c5fc);
+          }
+        }
+      }
+    }
+    .join_us{
+      margin-top: 24px;
+      margin-left: 32px;
+      .join_btn {
+        width: 245px;
+        height: 62px;
+        margin: 0 auto;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: linear-gradient(to left, #276ff6, #83c5fc);
+        border-radius: 31px;
+        // box-shadow: 0 6px 10px 6px rgba(0, 180, 255, 0.3);
+      }
+    }
+  }
+
+  .page1_right{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1s 0s ease-out;
+    height: auto;
+    display: inline-block;
+    width: 645px;
+    overflow: hidden;
+    vertical-align: middle;
+    img {
+      vertical-align: top;
+    }
+  }
+}

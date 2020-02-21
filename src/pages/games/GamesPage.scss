@@ -1,0 +1,152 @@
+.GamesPage {
+  .gameBox{
+    width: 1200px;
+    min-height: 500px;
+    max-height: 1200px;
+    padding: 34px 47px 6px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+    background-color: #fff;
+    margin-bottom: 80px;
+    position: relative;
+    .GameTabs{
+      width: 1100px;
+    }
+    .secondBox{
+      width: 100%;
+      border-top: 1px solid #f2f2f2;
+      height: 82px;
+      margin-top: 71px;
+      padding-top: 18px;
+      font-size: 18px;
+      .tabsCate{
+        margin-right: 20px;
+        color: #666;
+      }
+      .active{
+        color: #1890ff;
+      }
+      .searchBox{
+        float: right;
+        position: relative;
+        input{
+          width: 200px;
+          height: 38px;
+          line-height: 38px;
+          padding: 0 40px 0 18px;
+          border: 1px solid #dadada;
+          font-size: 14px;
+        }
+        .iconsousuo{
+          position: absolute;
+          right: 10px;
+          top: 4px;
+          font-size: 21px;
+          cursor: pointer;
+          &:hover{
+            color: #1890ff;
+          }
+        }
+      }
+    }
+    .gameContent{
+      display: flex;
+      flex-wrap:wrap;
+      .noGame{
+        margin: auto;
+        display: block;
+      }
+      .gameConBox{
+        width: 171px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid rgba(153, 153, 153, 0.26);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+        .gameImgBox{
+          height: 169px;
+          position: relative;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: 100%;
+            transform: scale(1);
+            transition: all .4s ease;
+          }
+          .imgShadow{
+            transition: all .4s ease;
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.171);
+            transform: scaley(0);
+            .startButton{
+              width: 107px;
+              background: linear-gradient(270deg, #276ff6, #83c5fc);
+              height: 30px;
+              text-align: center;
+              border-radius: 4px;
+              line-height: 30px;
+              font-size: 12px;
+              color: #fff;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              cursor: pointer;
+              &:hover{
+                background: linear-gradient(90deg, #276ff6, #83c5fc);
+              }
+            }
+          }
+          &:hover{
+            img{
+              transform: scale(1.1);
+            }
+            .imgShadow{
+              transform: scaley(1);
+            }
+          }
+        }
+        
+        .gameTitleBox{
+          height: 40px;
+          padding: 0 15px;
+          span{
+            height: 40px;
+            line-height: 40px;
+            font-size: 13px;
+            color: #333;
+          }
+          .iconfont{
+            cursor: pointer;
+            float: right;
+            font-size: 20px;
+            line-height: 39px;
+            &:hover{
+              &::before{
+                content: "\e62b";
+              }
+              color: rgb(219, 44, 44);
+            }
+          }
+          .iconicon3{
+            color: rgb(219, 44, 44);
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+
+

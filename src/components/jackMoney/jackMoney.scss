@@ -1,0 +1,35 @@
+  .jackMoney{
+      background: url(./images/jackbg.png) -277px -193px  no-repeat;
+      width: 1380px;
+      margin: auto;
+      height: 412px;
+      position: relative;
+      .numBox{
+            position: absolute;
+            top: 275px;
+            left: 466px;
+            width: 490px;
+            height: 64px;
+          .num{
+              background-image: url(./images/jacknum.png);
+              overflow: hidden;
+              width: 41px;
+              height: 61px;
+              float: left;
+              transition: all .4s ease;
+              margin-right: 5px;
+              &:nth-of-type(2){
+                margin-right: 12px;
+              }
+              &:nth-of-type(5){
+                margin-right: 12px;
+              }
+              &:nth-of-type(8){
+                margin-right: 12px;
+              }
+          }
+      }
+  }
+
+
+

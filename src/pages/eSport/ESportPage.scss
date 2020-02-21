@@ -1,0 +1,22 @@
+.ESportPage {
+  @include DomPosition($width:1920px,$height:790px);
+  @extend .pr;
+  @include PageBG('ESportPageBG');
+  .bottomChess{
+    @include DomPosition(0,0,auto,0,1750px,233px,null,"pbAuto");
+    @include PageBG('ESportPageBGFoot',100%);
+  }
+  .imgBox{
+    @include DomPosition(263px,auto,2px,auto,1409px,400px,10,absolute);
+    img{
+      @extend .w-100;
+    }
+    button{
+        @extend .pb;
+        @include buttonStyle(629px);   
+    }
+  }
+}
+
+
+

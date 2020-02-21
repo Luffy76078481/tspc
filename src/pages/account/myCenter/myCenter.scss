@@ -1,0 +1,400 @@
+.MyCenter{
+    width: 100%;
+    height: auto;
+    background: #f5f6fa;
+    padding-top: 15px;
+    ul{
+        margin: 0;
+    }
+    .wrap{
+        position: relative;
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        min-height: 690px;
+        // 个人中心导航
+        .accountNav{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 225px;
+            margin-bottom: 40px;
+            min-height: 861px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 2px 32px 1px rgba(176,192,237,.25);
+            box-shadow: 0 2px 32px 1px rgba(176,192,237,.25);  
+            .head{
+                text-align: center;
+                padding: 26px 0 24px;
+                .portrait{
+                    position: relative;
+                    width: 80px;
+                    height: 80px;
+                    background-image: url(./images/person_tx.png);
+                    background-repeat: no-repeat;
+                    margin: 0 auto 28px;        
+                    i{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        display: block;
+                        background-image: url(./images/CristianoRonaldo.jpg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }     
+                }
+                .user{
+                    span{
+                        font-size: 18px;
+                        color: #333;
+                    }
+                }
+            } 
+            .title{
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                cursor: pointer;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin: 18px 0 10px 40px;
+                color: #666;
+                font-size: 16px;
+            } 
+            ul{
+                width: 100%;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease;
+                overflow: hidden;
+                max-height: 336px;
+                li{
+                    position: relative;
+                    height: 46px;
+                    a{
+                        position: relative;
+                        height: 100%;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        font-size: 14px;
+                        border-left: solid 2px transparent;
+                        &.active{
+                            background: #fcfcfd;
+                            border-left: solid 2px #00aeff;
+                            span{
+                                color: #00aeff;
+                            }
+                        }
+                        i{
+                            display: -webkit-inline-box;
+                            display: -webkit-inline-flex;
+                            display: -ms-inline-flexbox;
+                            display: inline-flex;
+                            margin-left: 40px;
+                            margin-right: 16px;
+                            -webkit-box-align: center;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            width: 30px;
+                            height: 30px;
+                            background-size: cover;
+                            &.deposit{
+                                background-image: url(./images/user_deposit.png);
+                            }
+                            &.withdraw{
+                                background-image: url(./images/user_withdraw.png);
+                            }
+                            &.transfer{
+                                background-image: url(./images/user_transfer.png);
+                            }
+                            &.bank{
+                                background-image: url(./images/user_deposit.png);
+                            }
+                            &.betting{
+                                background-image: url(./images/user_betting.png);
+                            }
+                            &.transaction{
+                                background-image: url(./images/user_transaction.png);
+                            }
+                            &.userInfo{
+                                background-image: url(./images/user_profile.png);
+                            }
+                            &.promote{
+                                background-image: url(./images/user_promote.png);
+                            }
+                            &.news{
+                                background-image: url(./images/user_notice.png);
+                            }
+                            &.Feedback{
+                                background-image: url(./images/ico-notice-copy-2.png);
+                            }
+                            &.bangzhu{
+                                background-image: url(../deposit/images/photo_2020-01-03_17-48-55.jpg);
+                            }
+                        }
+                        span{
+                            color: #333;
+                        }
+                    }
+                }
+            }       
+        }
+        // 个人中心右
+        .centerDetail{
+            width: auto;
+            height: auto;
+            float: right;
+            // 右上
+            .userBasic{
+                width: 960px;
+                height: 74px;
+                border-radius: 4px;
+                background: #fff;
+                -webkit-box-shadow: 0 2px 32px 1px rgba(176,192,237,.25);
+                box-shadow: 0 2px 32px 1px rgba(176,192,237,.25);
+                margin: 0 0 15px 15px;
+                position: relative;
+                // 账户余额，一键回收
+                .lb{
+                    position: relative;
+                    float: left;
+                    .infos{
+                        position: relative;
+                        padding: 0 40px 0 30px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        height: 74px;
+                        &::after{
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            height: 28px;
+                            background: #e3e3e3;
+                            position: absolute;
+                            top: 23px;
+                            right: 0;       
+                        }
+                        span.mm{
+                            font-size: 16px;
+                            span{
+                                color: #333;
+                            }
+                            strong{
+                                font-size: 16px;
+                                color: #fbbc05;
+                            }
+                        }
+                        i{
+                            display: inline-block;
+                            cursor: pointer;
+                            width: 16px;
+                            height: 16px;
+                            margin: 0 12px 0 8px;
+                            position: relative;
+                            &.loading{
+                                background-image: url(./images/icon_refresh.png);
+                            }
+                        }
+                        a{
+                            color: #00aeff;
+                            font-size: 12px;
+                        }
+                        span.mNotice{
+                            display: inline-block;
+                            font-size: 12px;
+                            margin-left: 8px;
+                            color: #999;
+                        }
+                    }
+                }
+                // 账户安全等级
+                .rb{
+                    float: left;
+                    padding: 0 40px;
+                    .userSafe{
+                        float: left;
+                        height: 100%;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        .lv{
+                            float: left;
+                            font-size: 16px;
+                            color: #333;
+                            span{
+                                color:#e52f2f;
+                            }
+                        }
+                        .how{
+                            float: left;
+                            height: 74px;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-align: center;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            margin-left: 16px;
+                            ul{
+                                width: 136px;
+                                li{
+                                    float: left;
+                                    text-align: center;
+                                    position: relative;
+                                    margin-right: 6px; 
+                                    margin-top: 3px;
+                                    >a{
+                                        i{
+                                            width: 22px;
+                                            height: 22px;
+                                            display: inline-block;
+                                            &.tel{
+                                                background-image: url(./images/ico_mobile_unbound.png);
+                                                &.has{
+                                                    background-image: url(./images/ico_mobile.png);
+                                                }
+                                            }
+                                            &.email{
+                                                background-image: url(./images/ico_email_unbound.png);
+                                                &.has{
+                                                    background-image: url(./images/ico_email.png);
+                                                }
+                                            }
+                                            &.info{
+                                                background-image: url(./images/ico_user_unbound.png);
+                                                &.has{
+                                                    background-image: url(./images/ico_user.png);
+                                                }
+                                            }
+                                            &.banks{
+                                                background-image: url(./images/ico_bank_unbound.png);
+                                                &.has{
+                                                    background-image: url(./images/ico_bank.png);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    span{
+                                        display: none;
+                                        padding-top: 21px;
+                                        padding-left: 15px;
+                                        padding-right: 15px;
+                                        color: #888;
+                                        position: absolute;
+                                        width: 236px;
+                                        height: 70px;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        top: 18px;
+                                        left: -185px;
+                                        background-repeat: no-repeat;
+                                        z-index: 10;      
+                                        background-image: url(./images/tishi.png);
+                                        a{
+                                            color: #2894f0;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // 下
+            .accountRight{
+                width: 960px;
+                height: auto;
+                min-height: 772px;
+                padding: 30px 30px 40px;
+                border-radius: 4px;
+                overflow: hidden;
+                background: #fff;
+                -webkit-box-shadow: 0 0 32px 1px rgba(176,192,237,.25);
+                box-shadow: 0 0 32px 1px rgba(176,192,237,.25);
+                margin-left: 15px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+
+// 公共，出现多次共用的部分
+.accountRight{
+    .depositNew,.Transfer,.UserInfo{
+        input{ // 输入框
+        width: 200px;
+        height: 40px;
+        padding-left: 10px;
+        border-radius: 2px;
+        line-height: normal;
+        border: 1px solid #e3e3e3;
+        }        
+    }
+ 
+    select{
+        display: flex;
+        width: 200px;
+        height: 40px;
+        padding-left: 12px;
+        border: 1px solid #e3e3e3;
+        border-radius: 2px;
+        position: relative;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    button.Preservation,button.SubBut{ // 按钮
+      width: 200px;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      cursor: pointer;
+      background: -webkit-gradient(linear, right top, left top, from(#276ff6), to(#83c5fc));
+      background: -webkit-linear-gradient(right, #276ff6, #83c5fc);
+      background: linear-gradient(270deg, #276ff6, #83c5fc);
+      color: #fff;
+      color: #f4f6f9;
+      border: none;
+      font-size: 14px;
+      border-radius: 20px;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      -webkit-box-shadow: 0 6px 7px 4px rgba(0,180,255,.15);
+      box-shadow: 0 6px 7px 4px rgba(0,180,255,.15);
+      &:hover{ 
+        background: -webkit-gradient(linear, left top, right top, from(#276ff6), to(#83c5fc));
+        background: -webkit-linear-gradient(left, #276ff6, #83c5fc);
+        background: linear-gradient(90deg, #276ff6, #83c5fc);
+        color: #fff;  
+      }
+    }
+  }

@@ -1,0 +1,130 @@
+.Bank{
+  .banks{
+    position: relative;
+    margin-top: 15px;
+    .card{
+      &:nth-of-type(1n){
+        background: url(./images/card1.200a1d30.png) no-repeat center / 100%;
+      }
+      &:nth-of-type(2n){
+        background: url(./images/card2.3874b23d.png) no-repeat center / 100%;
+      }
+      width: 280px;
+      height: 168px;
+      position: relative;
+      padding: 12px;
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 24px;
+      float: left;
+      p.BankTitle{
+        padding: 5px;
+        margin-bottom: 10px;
+        position: relative;
+        color: #fff;
+        font-size: 16px;
+        >span:nth-child(2){
+          float: right;
+        }
+      }
+      p.BankNum{
+        position: absolute;
+        color: #fff;
+        font-size: 16px;
+        top: 90px;
+        left: 25px;
+      }
+    }
+  }
+  >h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }   
+  .bansWrap{
+    text-align: center;
+    margin-top: 50px;
+    >div.imgs{
+      margin-bottom: 20px;
+      width: 100%;
+      height: 167px;
+      background: url(../deposit/images/no_bank.png) no-repeat center;
+    }
+  }
+}
+
+p.bindtobank{
+  color: #333;
+  font-size: 14px;
+  text-emphasis: center;
+  a{
+    color: #00aeff;
+    text-decoration: underline;
+  }
+}
+.binding{
+  margin-top: 25px;
+  >h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }   
+  .bankNoc{
+    color: #333;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+  .labelBox{
+    height: 40px;
+    margin-bottom: 25px;
+    position: relative;
+    zoom: 1;
+    label{
+      float: left;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 14px;
+      color: #333;
+      display: block;
+    }
+    .doingWith{
+      float: left;
+      .Pui-PassWord{
+        border: 1px solid #e3e3e3;
+        width: auto;
+        .PayPassWord{
+          display: table-cell;
+          margin: 0;
+        }
+      }
+    }
+    .doing{
+      float: left;
+      input{
+        height: 40px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        line-height: 40px;
+        padding: 4% 8px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #666;
+        border: 1px solid #e3e3e3;
+        border-radius: 2px;
+        margin: 0;
+        text-indent: 0;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        width: 200px;
+      }
+      span{
+        line-height: 40px;
+        color: #333;
+      }
+    }
+  }
+}

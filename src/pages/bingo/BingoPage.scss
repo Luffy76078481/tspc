@@ -1,0 +1,26 @@
+.BingoPage {
+    position: relative;
+    width: 1920px;
+    height: 782px;
+    margin: 0 auto;
+    @include PageBG('BingoPageBG',50%);
+    .GameTabs{
+        z-index: 1;
+        @include DomPosition(auto,363px,57px);
+    }
+    .leftImg,.rightImg,button{
+        position: absolute;
+    }
+    .leftImg{
+        @include DomPosition(277px,auto,64px);
+    }
+    .rightImg{
+        @include DomPosition(auto,486px,161px);
+    }
+    button{
+        @include buttonStyle(); 
+    }
+}
+
+
+

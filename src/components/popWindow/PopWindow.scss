@@ -1,0 +1,150 @@
+.PopWindow{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.515);
+    z-index: 1000;
+    .windowBox{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+        width: 5rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        overflow: hidden;
+        .icon-iconclose{
+            position: absolute;
+            right: .1rem;
+            top: .1rem;
+            color: #fff;
+        }
+       
+        &.infoWindow,&.msgWindow{       
+            .tips{
+                font-size: .275rem;
+                text-align: center;
+                color: #af0000;
+                padding-top: .05rem;
+                display: block;
+                margin-bottom: .25rem;
+            }
+            input{
+                padding: 0 5px;
+                border: 1px solid #ccc;
+                width: 90%;
+                height: 28px;
+                line-height: 28px;
+                font-size: .25rem;
+                float: left;
+                margin-bottom: .2rem;
+            }                   
+        }
+        &.infoWindow{
+            height: 5rem;
+        }
+        // 验证弹窗
+        &.msgWindow{
+            height: 6rem;
+            .inputWrap{
+                .code{
+                    width: 50%;
+                }
+                .getCode{
+                    padding: 1px 0;
+                    width: calc(40%);
+                    text-align: center;
+                    float: left;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: .25rem;
+                    color: #fff;
+                    background: #cf0000;      
+                    &.disabled{
+                        background: #cecece;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+        // 双按钮弹窗
+        &.contentWindow{
+            height: 6rem;
+        }
+        .titleImg{
+            // background: url($PopWindowBG) no-repeat 0 0 / 100% 100%;
+        }
+        .windowTitle{
+            text-align: center;
+            height: 1.7rem;
+            line-height: 1.5rem;
+            color: #fff;
+            font-size: .3rem;
+        }
+        .wondowContent{
+            min-height: 3rem;
+            height: auto;
+            padding: .1em .2rem 0;
+            background: #fff;
+            margin-top: -1px;
+            font-size: .275rem;
+            line-height: .4rem;
+        }
+        .windowText{
+            flex-grow: 1;
+            text-align: center;
+            font-size: .28rem;
+            line-height: 1.3rem;
+            color: #fff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .windowspeText{
+            font-size: .28rem;
+            background: #fff;
+            margin-top: -1px;
+            line-height: .35rem;
+            padding: .2rem .2rem .3rem .2rem;
+            text-align: center;
+        }
+        .HintText{
+            flex-grow: 1;
+            padding: 0rem .266667rem;
+            font-size: .32rem;
+            font-weight: 700;
+            color: #555;
+            text-align: center;
+            word-break: break-all;
+        }
+        .bottomBox{
+            background: #fff;
+            height: 1.9rem;
+            margin-top: -1px;
+            padding: 0 .2rem;
+            button{
+                display: block;
+                margin: auto;
+                width: 3rem;
+                height: .7rem;
+                border-radius: 8px;
+                border: none;
+                font-size: .3rem;
+            }
+            .leftBtoom{
+                margin: .4rem auto .1rem auto;
+                color: #fff;
+            }
+            .rightBtoom{
+                background: none;
+                color: #555;
+            }
+        }
+      
+    }
+}

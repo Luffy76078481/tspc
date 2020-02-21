@@ -1,0 +1,9 @@
+// 为了更好的体验，预加载一些重要图片
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    // background: url("../../common/style/images/loading_gold.png") no-repeat -10000px -1000px,url($PopWindowBG) no-repeat -10000px -1000px;
+    width: 0;
+    height: 0
+}

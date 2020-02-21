@@ -1,0 +1,27 @@
+.CasinoPage {
+    position: relative;
+    width: 1920px;
+    height: 782px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    @include PageBG('CasinoPageBG',50%);
+    .GameTabs{
+        @include DomPosition(auto,363px,57px);
+    }
+    .leftImg,.rightImg,button{
+        position: absolute;
+    }
+    .leftImg{
+        @include DomPosition(277px,auto,127px);
+    }
+    .rightImg{
+        @include DomPosition(auto,425px,161px);
+    }
+    button{
+        @include buttonStyle();
+    }
+}
+
+
+

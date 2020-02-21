@@ -1,0 +1,79 @@
+@import "./animate.css";
+
+$mainWidth:1200px;
+$BG1:#3d4145;
+$BG2:#FFF;
+$BG3:rgba(255, 255, 255, 0.85);
+$fontColor1:#666;
+$fontHover1:#00a5e2;
+$USDNAVCOLOR:rgb(70,100,240);
+
+body {
+  background: #f4f6f9;
+}
+.pr{position: relative}
+.pb{position: absolute}
+.mAtuo{margin: 0 auto}
+.pbAuto{margin:auto;position:absolute;}
+.prAuto{margin:auto;position:relative;}
+.w-100{width: 100%;}
+
+// 背景图（前方高能：注意图片引入路径）
+$PageBG:(
+  BingoPageBG:url('./images/bg.png'),// 彩票页背景
+  CasinoPageBG:url('./images/bg.png'),// 真人页背景
+  ESportPageBG:url('./images/bg.png'),// 电竞页背景
+  ESportPageBGFoot:url('./images/pp.png'), // 电竞页背景底部
+);
+// 主题色
+$Colors:(
+  normalColor:#fff,// 常规色
+  buttonColor:#fff, // 按钮色
+);
+// 混合类型
+// 按钮
+@mixin buttonStyle($top:550px) {
+  height: 53px;
+  line-height: 53px;
+  margin-bottom: 10px;
+  background: linear-gradient(270deg, #276ff6, #83c5fc);
+  color: map-get($Colors,buttonColor);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  width: 203px;
+  right: 588px;
+  top: $top;
+  font-size: 17px;
+  &:hover{
+    background: linear-gradient(90deg, #276ff6, #83c5fc);
+  }
+};
+// 背景图
+@mixin PageBG($page,$position:100%,$size:contain){
+  background-repeat: no-repeat;
+  background-image:WhichPage($page) ;
+  background-position: $position;
+  background-size: $size;
+};
+// 定位与长度
+@mixin DomPosition($left:auto,$right:auto,$top:auto,$bottom:auto,$width:null,$height:null,$zIndex:null,$position:null){
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom:$bottom;
+  width: $width;
+  height:$height;
+  z-index:$zIndex;
+  @if($position=="pbAuto"){
+    @extend .pbAuto;
+  }@else if($position=="prAuto"){
+    @extend .prAuto;
+  }@else{
+    position: $position;
+  }
+};
+// 方法
+@function WhichPage($page) {
+  @return map-get($PageBG,$page)
+};

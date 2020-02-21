@@ -1,0 +1,233 @@
+.NavBar{
+    position: relative;
+    z-index: 100;
+    min-width: 1856px;
+   .navTop{
+       height: 34px;
+       background: $BG1;
+       .navTopCon{
+           margin: auto;
+           width: $mainWidth;
+           height: 100%;
+            line-height: 34px;
+            color: silver;
+            font-size: 13px;
+           .goHome{
+               color: silver;
+               margin-left: 40px;
+           }
+           .tophover:hover{
+               color: white;
+               cursor: pointer;
+           }
+           .login-form{
+               float: right;
+               position: relative;
+               height: 100%;
+               .userName,.password{
+                color: silver;
+                line-height: 18px;
+                padding: 4px 5px 4px 10px;
+                width: 144px;
+                background-color: #3d4145;
+                border-radius: 4px;
+                margin-right: 10px;
+                float: left;
+                margin-top: 3px;
+                border: 1px solid #666;
+               }
+               .forget{
+                   position: absolute;
+                   left: 258px;
+                   top: 0px;
+                   cursor: pointer;
+               }
+               button{
+                    transition: all .4s ease;
+                    background-color: #01a69c;
+                    margin-right: 10px;
+                    color: #ededfc;
+                    width: 72px;
+                    height: 28px;
+                    border: none;
+                    float: left;
+                    padding: 5px 15px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    margin-top: 3px;
+               }
+               .form-reg{
+                    transition: all .4s ease;
+                    background-color: #1c97ce;
+                    width: 72px;
+                    color: #ededfc;
+                    height: 28px;
+                    line-height: 28px;
+                    border: none;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    display: inline-block;
+               }
+               button:hover,.form-reg:hover{
+                background-color: #ee8f13;
+               }
+           }
+           .userInfo{
+            float: right;
+            position: relative;
+            a{
+                color: silver;
+                margin-right: 14px;
+                .headMoney{
+                    color: #fcad34;
+                    padding-left: 6px;
+                }
+            }
+            a:nth-of-type(1),a:nth-of-type(5){
+                margin: 0;
+            }
+            a:hover,.loginOut:hover{
+                color: white;
+            }
+            .loginOut{
+                cursor: pointer;
+            }
+           }
+           
+       }
+   }
+   .navCen{
+       height: 86px;
+       background: $BG2;
+        .navCenCon{
+            margin: auto;
+            width: $mainWidth;
+            height: 100%;
+            display: flex;
+        }
+        a{
+            float: left;
+            height: 100%;
+            line-height: 86px;
+            font-size: 16px;
+            margin-right: 23px;
+            color: $fontColor1;
+            position: relative;
+            flex-grow: 1;
+            cursor: pointer;
+            span{
+                margin-right: 6px;;
+                transition: all .4s ease;
+            }
+            .iconjiantou{
+                transition: all .4s ease;
+                display: inline-block;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .bord{
+                transition: all .4s ease;
+                width: 27px;
+                transform: scaleX(0);
+                background: $fontHover1;
+                height: 2px;
+                position: absolute;
+                left: 19px;
+                margin: auto;
+                top: 60px;
+            }
+            .navLogo{
+                display: block;
+                width: 141px;
+                height: 60px;
+                margin-top: 11px; 
+            }
+        }
+        a:last-child{
+            margin-right: 0;
+        }
+        a:hover{
+            color: $fontHover1;
+            .iconjiantou{
+                transform: rotate(180deg);
+            }
+            .bord{
+                transform: scaleX(1);
+            }
+        }
+
+   }
+
+   .navBarBox{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        bottom: -300px;
+        z-index: -1;
+        background: $BG3;
+        transition: all .4s ease;
+        .secNavBarBox{
+            margin: auto;
+            width: $mainWidth;
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content:center;
+            .secNavBar{
+                flex-grow: 1;
+                overflow: hidden;
+                img{
+                    transition: all .4s ease;
+                    width: 100%;
+                    height: 100%;
+                };
+                img:hover{
+                    transform: scale(1.05,1.05);
+                    background: rgba(255, 255, 255, 0.784);
+                }
+            }
+            .secNavBar-swper{
+                overflow: hidden;
+                width: 200px;
+                img{
+                    transition: all .4s ease;
+                    width: 100%;
+                    height: 100%;
+                };
+                img:hover{
+                    transform: scale(1.05,1.05);
+                    background: rgba(255, 255, 255, 0.784);
+                }
+            }
+        }
+   }
+   .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+
+

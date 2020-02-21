@@ -1,0 +1,35 @@
+.SportPage {
+  width: 1920px;
+  height: 812px;
+  background: url(./images/bg.png) 0 0/100% 100% no-repeat;
+  position: relative;
+  .GameTabs{
+    top: 22px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .tabsBox{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .left{
+    display: inline-block;
+    height: 100%;
+    margin-left:5%;
+    iframe{
+      height: 100%;
+    }
+  }
+  .right{
+    background-color: #fff;
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    iframe{
+      height: 100%;
+      width: 100%;     
+    }
+  }
+}

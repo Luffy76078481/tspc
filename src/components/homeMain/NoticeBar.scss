@@ -1,0 +1,25 @@
+.NoticeBar {
+    text-align: center;
+    .icon-md-guangbo{
+        font-size: 0.35rem;
+    }
+    .wrapper {
+        font-size: 0.25rem;
+        color: #5a4242;
+        display: inline-block;
+        margin-left: 0.1rem;
+        width: 6.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .inner {
+        overflow: hidden;
+    }
+
+    .inner p {
+        display: inline-block;
+    }
+
+}

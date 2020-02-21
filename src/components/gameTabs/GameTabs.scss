@@ -1,0 +1,103 @@
+.GameTabs{
+    width: 700px;
+    height: 58px;
+    position: absolute;
+    z-index: 1;
+    div {
+       user-select:none;
+    }
+    .tabsBox{
+        &>.nortabs{
+            float: left;
+            width: 120px;
+            height: 42px;
+            line-height: 42px;
+            margin-right: 15px;
+            border: none;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#e8e8e8));
+            background-image: -webkit-linear-gradient(top,#fff,#e8e8e8);
+            background-image: linear-gradient(180deg,#fff,#e8e8e8);
+            cursor: pointer;
+            &:hover{
+                background-image: linear-gradient(to left, #276ff6, #83c5fc);
+                color: #fff;
+            }
+        }
+       
+        .swiper-slide{
+            width: 120px;
+            height: 42px;
+            line-height: 42px;
+            border: none;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#e8e8e8));
+            background-image: -webkit-linear-gradient(top,#fff,#e8e8e8);
+            background-image: linear-gradient(180deg,#fff,#e8e8e8);
+            cursor: pointer;
+            &:hover{
+                background-image: linear-gradient(to left, #276ff6, #83c5fc);
+                color: #fff;
+            }
+        }
+        .swiper-button-next,.swiper-button-prev{
+            height: 16px;
+            top: 35px;
+        }
+        .tabActive{
+            background-image: linear-gradient(to left, #276ff6, #83c5fc);
+            color: #fff;
+        }
+
+
+        // tabs样式
+        .ant-tabs{
+            .ant-tabs-bar{border-bottom: none;margin: 0;
+                .ant-tabs-nav-container{margin-bottom: 0}
+            }
+            .ant-tabs-tab-arrow-show{
+                color: #fff;
+                .anticon {
+                    font-size: 30px;
+                }
+            }
+            .ant-tabs-nav-wrap{
+                margin-bottom: 0;
+                .ant-tabs-ink-bar{
+                    width: 0 !important;
+                    display: none !important;
+                }
+                .ant-tabs-tab{
+                    width: 233px;
+                    padding: 0;
+                    margin-right: 0;
+                    .custom-tab-item{
+                        border: 1px solid transparent;
+                        border-right: 1px solid #303030;
+                        img{
+                            height: 54px;vertical-align: middle;
+                        }
+                    }
+                    &:first-child{
+                        .custom-tab-item{
+                            border-left: 1px solid #303030;
+                        }
+                    }
+                }
+                // 激活样式
+                .ant-tabs-tab-active{
+                    .custom-tab-item{
+                        border: 1px solid #ffe49b !important;
+                    }
+                }
+            }
+        }
+
+    }
+}
